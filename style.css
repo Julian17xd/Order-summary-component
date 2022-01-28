@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Paleblue);
+}
+
+main{
+    margin: 70px auto;
+    width: 350px;
+    height: 570px;
+    border: 1px;
+    border-radius: 20px;
+    background-color: var(--Verypaleblue);
+}
+
+/*--------------- Image Container ---------------*/
+.container-image{
+    height: 160px;
+    width: 100%;
+}
+
+.main-image{
+    background-image: url(images/illustration-hero.svg);
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+    border-top: 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*--------------- Container Title ---------------*/
+.title-container{
+    padding-top: 35px;
+    text-align: center;
+    width: 235px;
+    margin: auto;
+}
+
+h1{
+    color: var(--Darkblue);
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+
+.title-container p{
+    width: 230px;
+    color: var(--Desaturatedblue);
+    padding-bottom: 40px;
+    font-size: 14px;
+}
+
+/*--------------- Plan and Price ---------------*/
+.plan-price{
+    width: 235px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.icon-music{
+    background-image: url(images/icon-music.svg);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+h2{
+    font-size: 14px;
+    color: var(--Darkblue);
+}
+
+.anual-plan{
+    padding-top: 2px;
+    padding-right: 20px;
+}
+
+.anual-plan p{
+    color: var(--Desaturatedblue);
+    font-size: 14px;
+}
+
+.change{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.change a{
+    color: var(--Darkblue);
+    font-size: 14px;
+}
+
+a:hover{
+    color: var(--Desaturatedblue);
+}
+
+/*--------------- Buttons ---------------*/
+.buttons{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+}
+
+.proceed{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px;
+    border-radius: 15px;
+    background-color: var(--Brightblue);
+    color: white;
+    cursor: pointer;
+}
+
+.proceed:hover{
+    background-color: var(--Desaturatedblue);
+}
+
+.cancel{
+    width: 100%;
+    height: 45px;
+    border: 1px;
+    border-radius: 15px;
+    background-color: white;
+    color: var(--Desaturatedblue);
+    cursor: pointer;
+}
+
+.cancel:hover{
+    color: var(--Darkblue);
+}
+
+/*--------------- footer ---------------*/
+footer{
+    margin-bottom: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*--------------- MEDIA QUERIS ---------------*/
+@media screen and (min-width: 1200px){
+    main{
+        width: 390px;
+        height: 630px;
+    }
+
+    .title-container{
+        width: 310px;
+    }
+
+    .title-container p{
+        width: 295px;
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .container-image{
+        height: 190px;
+    }
+
+    .plan-price{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .anual-plan{
+        margin-right: 35px;
+    }
+
+    .anual-plan p{
+        font-size: 16px;
+    }
+
+    .change a{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    .buttons{
+        width: 330px;
+    }
+
+    .proceed{
+        margin-bottom: 30px;
+    }
+
+}
